@@ -1,0 +1,97 @@
+body{
+	height: 100%;
+}
+h1{
+	color: #3F505A;
+	margin-bottom: 5px;
+}
+form{
+	margin-top: 10px;
+}
+select{
+	margin-right: 2%;
+	width: 20%;
+}
+textarea{
+	height: 100px;
+	width: 100%;
+}
+input[name="phone"]{
+	width: 20%;
+}
+.right-colum span{
+	display: block;
+	padding-bottom: 5px;
+}
+
+.wrapper{
+	width: 60%;
+}
+
+.smallText{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+input[type="radio"]{
+	margin-top: 5px;
+	margin-bottom:  5px;
+}
+input[type="checkbox"]{
+	margin-top: 10px;
+}
+
+.symbLeft{
+	display: block;
+	margin-top: -5px;
+}
+.left-colum{
+	width: 26%;
+	height: 100%;
+	float: left;
+	margin-right: 30px;
+}
+.right-colum{
+	display: inline-block;
+	width: 30%;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+.content{
+	height: 190px;
+}
+
+.footer{
+	margin-top:5px;
+}
+.left-container{
+	width: 30%;
+	float:left;
+}
+.right-container{
+	width: 30%;
+	display: inline-block;
+}
+.left-container small,.right-container small{
+	margin-bottom: 20px;
+	display: block;
+}
+.left-container input[type="text"]{
+	display: inline-block;
+	position: relative;
+	top: -25px;
+}
+
+input[type="reset"], input[type="submit"]{
+	background: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-decoration: underline;
+	color: red;
+}
+
+input[type="submit"]{
+    margin-top: 25px;;
+}

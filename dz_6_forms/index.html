@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Отправка СМС</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Отправка СМС</h1>
+	<div class ="wrapper">
+		<span>Укажите оператора, к которому принадлежит телефон Вашего адресата</span>
+		<br>
+		<form name="SendSms" id="SendSms">
+			<select name="operator" >
+				<option value="63">+3 8 063</option>
+				<option value="93">+3 8 093</option>
+				<option value="67">+3 8 067</option>
+				<option value="97">+3 8 097</option>
+				<option value="95">+3 8 095</option>    
+			</select>
+			<input type="text" name="phone" placeholder="477-89-22" required>
+			<br>
+			<div class="content"><div class="left-colum"><small class="smallText">Введите сообщение длинною не больше чем 120 символов</small>
+				<textarea placeholder="Введите сообщение..." name="message" required rows="10"></textarea>
+				<small class="symbLeft">Символов осталось: 120 символов</small></div>
+				<div class="right-colum">
+					<span><b>SUPER GOOD'OK - dzvonit' 700!</b><br>Этот информативный текст будет добавлен к Вашему сообщению.</span>
+					<label><input type="radio" name="encryption" value="eng" checked>Латиница<br></label>
+					<label><input type="radio" name="encryption" value="rus">Кириллица<br></label>
+					<input type="checkbox" name="translit" value="true">Использовать Транслитерацию
+				</div></div>
+				<div class="footer">
+					<div class="left-container">
+						<small>Введите символы указаные на картинке:</small>
+						<img src="code.jpg" alt="captcha">
+						<input type="text" name="captcha" required size="10">
+						<input type="reset" name="reset" value="Обновить окно">
+					</div>
+					<div class="right-container">
+						<small>Подпись (максимум 10 символов)</small>
+						<input type="text" name="sign" maxlength="10" required size="10">
+						<input type="submit" name="reset" value="Отправить СМС"></div>
+					</div>
+				</form>
+			</div>
+		</body>
+		</html>
