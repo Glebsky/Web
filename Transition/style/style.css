@@ -1,0 +1,33 @@
+.feedback{
+	position: absolute;
+	left: -330px;
+	top: 300px;
+	height: 119px;
+	width: 350px;
+	background: url(../img/1.jpg) no-repeat 224% 53%, #333333;
+		-webkit-transition: 1s ease-out 0.1s;
+     -moz-transition: 1s ease-out 0.1s;
+     -o-transition: 1s ease-out 0.1s;
+     transition: 1s ease-out 0.1s;
+}
+
+.feedback img{
+ 	width: 100px;
+    float: left;
+    padding-top: 7px;
+}
+
+.feedback span{
+	color: white;
+    display: block;
+    margin-right: 21px;
+	margin-top: 15px;
+}
+
+.feedback:hover {
+	left: 0px;
+	-webkit-transition: 1s ease-out 0.1s;
+     -moz-transition: 1s ease-out 0.1s;
+     -o-transition: 1s ease-out 0.1s;
+     transition: 1s ease-out 0.1s;
+ }
