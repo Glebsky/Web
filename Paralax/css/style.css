@@ -1,0 +1,48 @@
+header{
+  height: 102px;
+  background-color: black;
+}
+
+header logo{
+
+/*Главное меню*/
+}
+.main-menu ul{
+  list-style: none;
+  text-transform: uppercase;
+  float: right;
+}
+
+.main-menu ul li{
+display: inline-block;
+}
+
+.main-menu li a{
+  display: inline-block;
+  text-align: center;
+  height: 102px;
+  min-width: 50px;
+  padding-top: 40px;
+}
+
+a::after{
+  content: "";
+  display: none;
+  background: url("../images/active-state.png") no-repeat;
+  background-size: contain;
+  margin-top: 25px;
+  height: 30px;
+  width: 100%;
+}
+
+li:hover a::after{
+  display: block;
+}
+
+/*LOGO*/
+.logo{
+  margin-left: 28px;
+  width: 360px;
+  height: 102px;
+  background-color: #26b865;
+}
