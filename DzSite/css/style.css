@@ -1,0 +1,82 @@
+body,html{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #ebeaea;
+}
+
+header{
+  background-color: #4f4747;
+  width: 100%;
+}
+
+header>a{
+  display: block;
+  width: 197px;
+  margin: 0 auto;
+}
+header nav{
+  width: 500px;
+  margin: 0 auto;
+}
+header ul{
+  list-style: none;
+  padding: 0;
+}
+header li{
+  display: inline-block;
+}
+
+header li a{
+  color: #a99c84;
+  text-decoration: none;
+}
+
+
+/*CONTENT*/
+section{
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+section>article{
+  width: 100%;
+}
+
+section>article>img{
+  width: 100%;
+}
+
+article>h2{
+  color: #74927b;
+  margin: 0;
+  padding: 5px 0;
+}
+
+article>p{
+  margin: 0;
+}
+
+footer{
+  padding: 5px;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  background: url("../images/separator.png") no-repeat;
+background-position-y: 20%;
+  background-size: contain;
+}
+
+footer .rights{
+  padding-top: 20px;
+  float: left;
+}
+
+footer .author{
+  padding-top: 20px;
+  float: right;
+}
