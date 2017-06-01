@@ -43,6 +43,9 @@ li:hover a::after{
 .logo{
   margin-left: 28px;
   width: 360px;
+  text-transform: uppercase;
+  color: white;
   height: 102px;
-  background-color: #26b865;
+  background:url("../images/templatemo_logo.png") no-repeat #26b865;
+  background-position: 5% 50%;
 }
