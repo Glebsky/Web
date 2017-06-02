@@ -1,51 +1,150 @@
-header{
+header {
   height: 102px;
   background-color: black;
 }
 
-header logo{
 
 /*Главное меню*/
-}
-.main-menu ul{
+
+.main-menu {
   list-style: none;
+  font-size: 13pt;
   text-transform: uppercase;
   float: right;
 }
 
-.main-menu ul li{
-display: inline-block;
+.main-menu ul li {
+  display: inline-block;
 }
 
-.main-menu li a{
+.main-menu li a {
   display: inline-block;
   text-align: center;
-  height: 102px;
+  height: 100px;
   min-width: 50px;
+  padding: 0 20px;
   padding-top: 40px;
+  text-decoration: none;
+  color: white;
 }
 
-a::after{
+a::after {
   content: "";
   display: none;
   background: url("../images/active-state.png") no-repeat;
   background-size: contain;
-  margin-top: 25px;
+  margin-top: 20px;
   height: 30px;
   width: 100%;
 }
 
-li:hover a::after{
+li:hover a::after {
   display: block;
 }
 
+
 /*LOGO*/
-.logo{
+
+.logo {
+  display: inline-block;
   margin-left: 28px;
   width: 360px;
-  text-transform: uppercase;
   color: white;
   height: 102px;
-  background:url("../images/templatemo_logo.png") no-repeat #26b865;
+  background: url("../images/templatemo_logo.png") no-repeat #26b865;
   background-position: 5% 50%;
+  padding-top: 27px;
+  padding-left: 121px;
+}
+
+.logo span {
+  text-transform: uppercase;
+  font-size: 26pt;
+}
+
+
+/*Slider*/
+
+.slider {
+  background-color: #161616;
+}
+
+.slide {
+  background: url("../images/slider/slide1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  padding: 0 20px;
+}
+
+.slide .title{
+  float: right;
+  margin-bottom: 10px;
+  width: 380px;
+  height: 76px;
+  background-color: white;
+  font-size: 15pt;
+  text-transform: uppercase;
+  line-height: 76px;
+  text-align: center;
+}
+.title span{
+white-space: nowrap;
+overflow: hidden;
+}
+
+/*Навигация по слайдеру*/
+
+.slider-preview {
+  padding: 0 10%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.slider-preview .thumb {
+  padding-right: 33px;
+  width: 180px;
+  box-sizing: content-box;
+}
+
+.slider-preview .thumb:nth-last-child(1) {
+  padding-right: 0;
+}
+
+.buttons{
+  display: block;
+  position: relative;
+  left: 91.3%;
+  top: 50%;
+  max-width: 90px;
+}
+
+.buttons .button{
+  display: inline-block;
+  width: 43px;
+  height: 40px;
+  background: black;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+}
+
+.features{
+  width: 100%;
+  height: 450px;
+  background: white;
+}
+
+ .features ul{
+   text-decoration: none;
+   list-style: none;
+   color: #7e7e7e;
+ }
+
+.features ul li{
+  display: inline-block;
+  width: 255px;
+}
+.features li h3{
+  color: #444444;
 }
