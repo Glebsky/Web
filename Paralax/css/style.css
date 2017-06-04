@@ -1,3 +1,11 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+}
+
 header {
   height: 102px;
   background-color: black;
@@ -11,6 +19,7 @@ header {
   font-size: 13pt;
   text-transform: uppercase;
   float: right;
+  width: 54%;
 }
 
 .main-menu ul li {
@@ -77,7 +86,7 @@ li:hover a::after {
   padding: 0 20px;
 }
 
-.slide .title{
+.slide .title {
   float: right;
   margin-bottom: 10px;
   width: 380px;
@@ -88,10 +97,12 @@ li:hover a::after {
   line-height: 76px;
   text-align: center;
 }
-.title span{
-white-space: nowrap;
-overflow: hidden;
+
+.title span {
+  white-space: nowrap;
+  overflow: hidden;
 }
+
 
 /*Навигация по слайдеру*/
 
@@ -105,21 +116,22 @@ overflow: hidden;
   padding-right: 33px;
   width: 180px;
   box-sizing: content-box;
+      padding-bottom: 25px;
 }
 
 .slider-preview .thumb:nth-last-child(1) {
   padding-right: 0;
 }
 
-.buttons{
+.buttons {
   display: block;
   position: relative;
   left: 91.3%;
   top: 50%;
-  max-width: 90px;
+  max-width: 91px;
 }
 
-.buttons .button{
+.buttons .button {
   display: inline-block;
   width: 43px;
   height: 40px;
@@ -129,42 +141,232 @@ overflow: hidden;
   color: white;
 }
 
-.features{
-  width: 100%;
-  height: 450px;
+.features {
+  width: 80%;
   background: white;
-  width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
- .features ul{
-   position: relative;
-   left: 50%;
-   text-decoration: none;
-   list-style: none;
-   color: #7e7e7e;
- }
+.features ul {
+  text-decoration: none;
+  list-style: none;
+  color: #7e7e7e;
+}
 
-.features ul li{
-  position: relative;
-  left: -50%;
+.features ul li {
   display: inline-block;
   vertical-align: top;
   width: 255px;
 }
 
-.features img{
+.features img {
   display: block;
   width: 100px;
   height: 115px;
   margin: 0 auto;
 }
 
-.features li h3{
+.features li h3 {
   color: #454545;
   text-align: center;
 }
 
-.features li p{
+.features li p {
   text-align: center;
+}
+
+hr {
+  width: 90%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.title {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.leftSide {
+  background: url("../images/t-left.png") no-repeat;
+  width: 25%;
+  height: 3px;
+  display: inline-block;
+  padding-bottom: 13px;
+}
+
+.rightSide {
+  background: url("../images/t-right.png") no-repeat;
+  width: 25%;
+  height: 3px;
+  display: inline-block;
+  padding-bottom: 13px;
+}
+
+.products {
+  margin-bottom: 40px;
+}
+
+.title h2 {
+  display: inline;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.products .article-Box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.products aside {
+  background-color: #2bb665;
+  width: 85px;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.products aside img {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 10px;
+}
+
+.products aside p {
+  color: white;
+}
+
+.products article {
+  display: inline-block;
+  width: 75%;
+}
+
+.products article img {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.productsCount {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.productsCount .Item {
+  display: inline-block;
+  width: 130px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.productsCount .Item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.Item .imgage {
+  width: 130px;
+}
+
+.Item .watermark {
+  position: absolute;
+  left: 65px;
+  top: 5px;
+}
+
+.Item p {
+  font-size: 10px;
+  display: inline;
+  color: grey;
+}
+
+.Item .name {
+  font-size: 14px;
+  display: block;
+  color: black;
+  margin-bottom: -5px;
+}
+
+.Item .oldprice {
+  text-decoration: line-through;
+}
+
+.Item .newprice {
+  color: green;
+  font-weight: bold;
+}
+
+.contactUs {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.contactUs p {
+  text-align: center;
+}
+
+.contactUs img {}
+
+form {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contactUs input {
+  width: 45%;
+  margin: 10px;
+  border-bottom: 2px solid grey;
+}
+
+.contactUs input[name="Email"] {
+  margin-right: 0;
+}
+
+.contactUs input[name="Subject"] {
+  width: 97%;
+}
+
+.contactUs textarea[name="Message"] {
+  width: 97%;
+  margin-left: 10px;
+  border-bottom: 2px solid grey;
+}
+
+.contactUs input[type="submit"] {
+  background: none;
+  border: none;
+  color: green;
+  width: initial;
+}
+.contactUs input[type="submit"]:hover, .hoverbutton{
+  background: url("../images/active-state.png") no-repeat;
+  background-position: -18px 7px;
+}
+
+footer{
+  height: 45px;
+  background-color: #26b865;
+}
+
+footer p{
+  margin-left: 20px;
+  line-height: 45px;
+  display: inline;
+}
+
+footer .social{
+  float: right;
+  margin-top: 8px;
+  margin-right: 50px;
+}
+
+footer .social .icon{
+  width: 30px;
+  height: 30px;
+  background-color: #49c07c;
+  display: inline-block;
 }
