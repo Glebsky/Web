@@ -133,18 +133,38 @@ overflow: hidden;
   width: 100%;
   height: 450px;
   background: white;
+  width: 90%;
+  margin: 0 auto;
 }
 
  .features ul{
+   position: relative;
+   left: 50%;
    text-decoration: none;
    list-style: none;
    color: #7e7e7e;
  }
 
 .features ul li{
+  position: relative;
+  left: -50%;
   display: inline-block;
+  vertical-align: top;
   width: 255px;
 }
+
+.features img{
+  display: block;
+  width: 100px;
+  height: 115px;
+  margin: 0 auto;
+}
+
 .features li h3{
-  color: #444444;
+  color: #454545;
+  text-align: center;
+}
+
+.features li p{
+  text-align: center;
 }
