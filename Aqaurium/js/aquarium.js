@@ -8,7 +8,6 @@ class fish{
     this.fish.classList.add("fish");
     this.fish.style.top = Math.floor(Math.random()*window.innerHeight)+"px";
     this.fish.style.left = Math.floor(Math.random()*window.innerWidth)+"px";
-
     if (parseInt(this.fish.style.top) >= window.innerHeight - 32) {
       this.fish.style.top = parseInt(this.fish.style.top)-32+"px";
     }
@@ -19,15 +18,17 @@ class fish{
 
     this.fish.style.backgroundImage = "url('"+image+"')";
     document.body.appendChild(this.fish);
-
   }
   Direction(){
     this.HorDirection = Math.floor(Math.random()*2);
     this.VerDirection = Math.floor(Math.random()*4);
     this.stopTimer = null;
+
   }
 
- Move() {
+
+
+  Move() {
       if(this.HorDirection == 0){
         if(this.fish.classList.contains("toRight")){this.fish.classList.remove("toRight");}
         this.fish.classList.add("toLeft");
@@ -49,10 +50,23 @@ class fish{
       }
  }
 }
+
+function FishClick(fish) {
+  if(fish.classList.contains("toRight")){fish.style.left = parseInt(fish.style.left)+5+"px";}
+  if(fish.classList.contains("toLeft")){fish.style.left = parseInt(fish.style.left)-5+"px";}
+  runcount++;
+  if(runcount ==10){
+     clearTimeout(runCountTimer);
+     runcount = 0;
+   }
+}
+
 var fishCount = 20;
 var FishArr = new Array();
 var fishImg;
 var TimerArr = new Array();
+var runcount = 0;
+var runCountTimer = new Array();
 //Create 10 fishes
 for (var i = 0; i < fishCount; i++) {
   //get random value for image.
@@ -78,6 +92,12 @@ for (var i = 0; i < fishCount; i++) {
 }
 for (var i = 0; i < fishCount; i++) {
   TimerArr[i] = null;
+}
+for (var i = 0; i < FishArr.length; i++) {
+  FishArr[i].fish.addEventListener("click",function(event){
+      var item = this;
+      runCountTimer = setInterval(function(){FishClick(item)},50);
+  },false);
 }
 //set Interval Function;
 var rnd = Math.floor((Math.random()*10000)+3000);

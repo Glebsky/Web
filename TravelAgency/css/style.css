@@ -1,0 +1,203 @@
+/*HEADER*/
+body{
+	background: wheat url("../images/background.jpg");
+	height: 100%;
+}
+.caption{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 40px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+
+
+.slide-item{
+	width: 100%;
+	height: 400px;
+	background: black url('../images/travel1.jpg') no-repeat;
+	background-position-y: 44%;
+	    background-size: 100%;
+}
+
+.logo{
+	display: block;
+	width: 250px;
+	height: 250px;
+	margin: auto;
+}
+
+.sec-slide{
+	background: black url('../images/travel2.jpg') no-repeat;
+	background-position-x: 52%;
+	background-position-y: 44%;
+	background-size: 100%;
+}
+
+.admin-tool{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #92be2e;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 40px 0px 0px 40px;
+    z-index: 1;
+}
+
+/*FOOTER*/
+footer{
+    background: #607D8B;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .exam {
+    font-size: 12px;
+    width: 110px;
+    word-wrap: break-word;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*SPRITES*/
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-facebook {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.sprite-github {
+    width: 24px;
+    height: 24px;
+    background-position: -39px -5px;
+}
+
+.sprite-message {
+    width: 24px;
+    height: 24px;
+    background-position: -73px -5px;
+}
+
+.socials{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.socials a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.itsteplogo{
+	width: 60px;
+	height: 60px;
+	float: right;
+    margin-top: 7px;
+    opacity: .3;
+}
+
+/*BOOTSTRAP REDEFENITION*/
+.carousel-inner{
+	height: 400px;
+}
+
+.carousel-control.right{
+	    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,#607D8B 100%);
+}
+
+.carousel-control.left{
+	        background-image: linear-gradient(to right,#607D8B 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-indicators{
+	bottom: 5px;
+}
+
+.carousel-indicators li{
+	width: 20px;
+	height: 20px;
+}
+.carousel-indicators .active{
+	width: 20px;
+	height: 20px;
+}
+
+/*NAV BAR*/
+.navbar-default{
+	    border-top: none;
+}
+
+.navbar-nav{
+	margin: 0;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: rgba(68, 165, 241, 0.3);
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.open>a{
+	background-image: linear-gradient(to bottom,#a3d5fb 0,#bedcf3 100%);
+}
+
+.navbar-default .navbar-collapse{
+	text-align: center;
+	max-height: 50px;
+}
+
+.navbar-default .navbar-collapse ul{
+	float: none;
+	display: inline-block; /*превращаем элемент в строчный блок*/
+}
+
+/*MEDIA REQUESTS*/
+
+/*Courusel Media Requests*/
+
+/*Phone*/
+@media (max-width: 320px) {
+
+.slide-item{
+	background-size: cover;
+    background-position-x: 70%;
+}
+
+.slide-item img{
+	width: 150px;
+	height: 150px;
+}	
+
+.slide-item .caption{
+	position: relative;
+    top: -46px;
+}
+
+.sec-slide{
+		background-size: cover;
+    background-position-x: 42%;
+}
+
+.sec-slide img{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 30px;
+}
+.sec-slide .caption{
+	position: relative;
+    top: 9px;
+}
+}
