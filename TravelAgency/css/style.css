@@ -48,10 +48,35 @@ body{
     z-index: 1;
 }
 
+/*CONTENT*/
+.tours h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tours form{
+	display: inline-block;
+	text-align: center;
+}
+
+.tours .form-inline .form-control{
+	margin-right: 20px;
+}
+
+.tours .table-responsive{
+	margin-top: 20px;
+}
+
+.center-wrapper{
+	text-align: center;
+}
+
 /*FOOTER*/
 footer{
     background: #607D8B;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -95,6 +120,22 @@ footer .exam {
 	margin-top: 25px;
 }
 
+.socials i{
+	opacity: .7;
+	-webkit-transition: .5s ease-out;
+     -moz-transition: .5s ease-out;
+     -o-transition: .5s ease-out;
+     transition: .5s ease-out;
+}
+
+.socials i:hover{
+	opacity: 1;
+	 -webkit-transition: .5s ease-out;
+     -moz-transition: .5s ease-out;
+     -o-transition: .5s ease-out;
+     transition:  .5s ease-out;
+}
+
 .socials a{
 	display: inline-block;
 	width: 100%;
@@ -108,6 +149,9 @@ footer .exam {
     margin-top: 7px;
     opacity: .3;
 }
+
+
+
 
 /*BOOTSTRAP REDEFENITION*/
 .carousel-inner{
@@ -163,6 +207,14 @@ footer .exam {
 	display: inline-block; /*превращаем элемент в строчный блок*/
 }
 
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{
+	margin-left: 0;
+}
+
+.checkbox, .radio{
+	margin: 0;
+}
+
 /*MEDIA REQUESTS*/
 
 /*Courusel Media Requests*/
@@ -200,4 +252,50 @@ footer .exam {
 	position: relative;
     top: 9px;
 }
+footer .itsteplogo{
+	float:none;
+	display: block;
+    margin: auto;
+}
+
+}
+
+@media (max-width: 425px) {
+
+.slide-item{
+	background-size: cover;
+    background-position-x: 70%;
+}
+
+.slide-item img{
+	width: 150px;
+	height: 150px;
+}	
+
+.slide-item .caption{
+	position: relative;
+    top: -46px;
+}
+
+.sec-slide{
+		background-size: cover;
+    background-position-x: 42%;
+}
+
+.sec-slide img{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 30px;
+}
+.sec-slide .caption{
+	position: relative;
+    top: 9px;
+}
+footer .itsteplogo{
+	float:none;
+	display: block;
+    margin: auto;
+}
+
 }
