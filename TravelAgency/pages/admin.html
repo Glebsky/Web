@@ -14,7 +14,6 @@
 </head>
 <body>
 	<header>
-
 		<div class="admin-tool glyphicon glyphicon-cog"></div>
 		<!-- Carousel  -->
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -102,8 +101,15 @@
 								<input class="btn btn-danger" type="submit" value="Delete">
 							</div>
 						</form>
-				</div>
-				<div class="col-xs-12 col-sm-6"><h3>Cities</h3>
+					</div>
+					<div class="col-xs-12 col-sm-6"><h3>Cities</h3>
+						<select class="form-control">
+									<option>Ukraine</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
 						<table class="table">
 							<tr>
 								<th>id</th>
@@ -124,12 +130,12 @@
 								<input class="btn btn-success" type="submit" value="Add">
 								<input class="btn btn-danger" type="submit" value="Delete">
 							</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
 						<h2>Hotels</h2>
-						<div class="form-group">
-							<form class="form-inline"></form>
+						<form class="form">
+							<div class="form-group">
 								<label for="Country">Country:</label>
 								<select class="form-control">
 									<option>Ukraine</option>
@@ -146,53 +152,84 @@
 									<option>4</option>
 									<option>5</option>
 								</select>
-						</div>
-							<table class="tabletable-hover table-condensed">
+							</div>
+							<table class="table table-hover">
 								<tr>
 									<th>id</th>
-									<th>City Name</th>
+									<th>Hotel Name</th>
 									<th>Select</th>
 								</tr>
 								<tr class="bg-info">
 									<td>1</td>
-									<td>Kiyv</td>
+									<td>Inturist</td>
 									<td>  <div class="checkbox">
 										<label>
 											<input type="checkbox" id="checkboxSuccess" name="ctcb" value="option1"></label>
 										</div></td>
 									</tr>
 								</table>
-							<div class="center-wrapper form-inline">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Hotel">
-										<input type="text" class="form-control" placeholder="Cost">
-										<input type="text" class="form-control" placeholder="Stars">
+								<div class="form-group hotel-inputs">
+									<div class="center-wrapper form-inline">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xs-6 col-sm-8"><input type="text" class="form-control" placeholder="Hotel"></div>
+												<div class="col-xs-3 col-sm-2"><input type="text" class="form-control" placeholder="Cost"></div>
+												<div class="col-xs-3 col-sm-2"><input type="text" class="form-control form-control" placeholder="Stars"></div></div>
+												<div class="row">
+													<textarea class="form-control" placeholder="Description"></textarea>
+												</div>
+											</div>
+										</div>
+										
+										<div class="center-wrapper"><input class="btn btn-success center-wrapper" type="submit" value="Add">
+											<input class="btn btn-danger center-wrapper" type="submit" value="Delete"></div>
+										</div>	
+									</form>		
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingOne">
+													<h4 class="panel-title">
+														<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+															Hotel Images Upload
+														</a>
+													</h4>
+												</div>
+												<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+													<div class="panel-body">
+														<div class="center-wrapper">
+															<form action="">
+																<select name="hotelSelect" class="form-control"><option value="0">Inturist</option></select>
+																<input type="file" name="file[]" multiple accept="images/*">
+																<input type="submit" class="btn btn-success">
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<input class="btn btn-success" type="submit" value="Description">
-									<input class="btn btn-danger" type="submit" value="Delete">
-							</div>			
-			</div>
-			</div>
-		</div>
-	<footer>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-6 col-sm-4 col-sm-6"><p class="exam">this site is an examination project</p>
-						</div>
-						<div class="col-xs-6 col-sm-4 socials">
-							<i class="sprite sprite-facebook" ><a href="https://www.facebook.com/gleb.kosyanov" alt="facebook" target="_blank"></a></i>
-							<i class="sprite sprite-github"><a href="https://github.com/Glebsky" target="_blank"></a></i>
-							<i class="sprite sprite-message"><a href="mailto:lotamountofsoul@gmail.com"></a></i>
-						</div>
-						<div class="col-xs-6 col-sm-4  col-xs-offset-3 col-sm-offset-0">
-							<img src="../images/itsteplogo.png" alt="Step Academy" width="60px" height="60px" class="itsteplogo">
-						</div>
-					</div>
-				</div>
-	</footer>
-			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<!-- Include all compiled plugins (below), or include individual files as needed -->
-			<script src="../js/bootstrap.min.js"></script></div>
-		</body>
-		</html>
+								</div>
+							</div>
+							<footer>
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-xs-6 col-sm-4 col-sm-6"><p class="exam">this site is an examination project</p>
+										</div>
+										<div class="col-xs-6 col-sm-4 socials">
+											<i class="sprite sprite-facebook" ><a href="https://www.facebook.com/gleb.kosyanov" alt="facebook" target="_blank"></a></i>
+											<i class="sprite sprite-github"><a href="https://github.com/Glebsky" target="_blank"></a></i>
+											<i class="sprite sprite-message"><a href="mailto:lotamountofsoul@gmail.com"></a></i>
+										</div>
+										<div class="col-xs-6 col-sm-4  col-xs-offset-3 col-sm-offset-0">
+											<img src="../images/itsteplogo.png" alt="Step Academy" width="60px" height="60px" class="itsteplogo">
+										</div>
+									</div>
+								</div>
+							</footer>
+							<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+							<!-- Include all compiled plugins (below), or include individual files as needed -->
+							<script src="../js/bootstrap.min.js"></script></div>
+						</body>
+						</html>

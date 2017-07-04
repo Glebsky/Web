@@ -1,7 +1,11 @@
 /*HEADER*/
+html{
+	position: relative;
+    min-height: 100%;
+}
 body{
-	background: wheat url("../images/background.jpg");
-	height: 100%;
+	background: white url("../images/background.jpg");
+	padding-bottom: 71px;
 }
 .caption{
     font-family: 'Pacifico', cursive;
@@ -11,7 +15,6 @@ body{
     bottom: 100px;
     text-align: center;
 }
-
 
 .slide-item{
 	width: 100%;
@@ -73,12 +76,27 @@ body{
 	text-align: center;
 }
 
+.hotel-inputs .row div{
+	padding: 0;
+}
+
+.hotel-inputs .form-control{
+	width: 100%;
+}
+.hotel-inputs textarea{
+	width: 100%;
+}
+
+
+
 /*FOOTER*/
 footer{
     background: #607D8B;
-    position: relative;
+    position: absolute;
     width: 100%;
     bottom: 0;
+    left: 0;
+    height: 71px;
 }
 
 footer .exam {
@@ -148,8 +166,13 @@ footer .exam {
 	float: right;
     margin-top: 7px;
     opacity: .3;
+    transition: .5s ease-out;
 }
 
+.itsteplogo:hover{
+	transition: .5s ease-out;
+	opacity: 1;
+}
 
 
 
