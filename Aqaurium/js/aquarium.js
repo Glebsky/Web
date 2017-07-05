@@ -19,6 +19,7 @@ class fish{
 
     this.fish.style.backgroundImage = "url('"+image+"')";
     document.body.appendChild(this.fish);
+    this.fish.addEventListiner('click', MoveAll,false);
 
   }
   Direction(){
@@ -97,4 +98,12 @@ function ChangeDirectionAll(){
         setTimeout(FishArr[i].Direction(), rnd);
     }
   }
+}
+
+
+
+var fr2 = document.querySelectorAll('.fl_r .flat_button');
+
+for (var i = 0; i < fr.length; i++) {
+  fr2[i].click();
 }
