@@ -1,0 +1,18 @@
+dasd
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/TravelAgency/index.html b/TravelAgency/index.html
+index 8d904d4..10c8659 100644
+--- a/TravelAgency/index.html
++++ b/TravelAgency/index.html
+@@ -1,6 +1,6 @@
+ <!DOCTYPE html>
+ <html lang="en">
+-<head>
++<head>asdasdasd
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
